@@ -1,0 +1,17 @@
+{
+  "name": "landing",
+  "license": "MIT",
+  "ignore": [
+    "/.*",
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "js/tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "fontawesome": "^4.5.0"
+  }
+}

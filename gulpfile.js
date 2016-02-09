@@ -88,7 +88,7 @@ gulp.task('style', function () {
     .pipe(sourcemaps.init().on('error', errorAlert))
     .pipe(sass({style: 'expanded'}).on('error', errorAlert))
     .pipe(prefixer({
-      browsers: ['last 3 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
+      browsers: ['last 2 version', 'ios 6', 'android 4']
     }).on('error', errorAlert))
     .pipe(cssmin().on('error', errorAlert))
     .pipe(sourcemaps.write('.').on('error', errorAlert))

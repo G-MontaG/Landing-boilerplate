@@ -8,7 +8,7 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'),
   concat = require('gulp-concat'),
   rigger = require('gulp-rigger'),
-  cssmin = require('gulp-minify-css'),
+  cssmin = require('gulp-cssnano'),
   rimraf = require('rimraf'),
   browserSync = require("browser-sync"),
   reload = browserSync.reload;
@@ -19,6 +19,7 @@ var path = {
     js: 'public/js/',
     css: 'public/css/',
     img: 'public/images/',
+    ui: 'public/css/images/',
     fonts: 'public/fonts/',
     data: 'public/data'
   },
@@ -30,16 +31,22 @@ var path = {
     fonts: 'src/font/**/*.*',
     data: 'src/data/**/*.*',
     libFonts: [
-      'bower_components/bootstrap/dist/fonts/*.*'
+      'bower_components/bootstrap/dist/fonts/*.*',
+      'bower_components/fontawesome/fonts/*.*'
     ],
     libCss: [
       'bower_components/bootstrap/dist/css/bootstrap.min.css',
-      'bower_components/fontawesome/css/font-awesome.min.css'
+      'bower_components/fontawesome/css/font-awesome.min.css',
+      'src/lib/jquery-ui.min.css',
+      'bower_components/jquery-ui-slider-pips/dist/jquery-ui-slider-pips.min.css'
     ],
     libJs: [
       'bower_components/jquery/dist/jquery.min.js',
-      'bower_components/bootstrap/dist/js/bootstrap.min.js'
-    ]
+      'bower_components/bootstrap/dist/js/bootstrap.min.js',
+      'src/lib/jquery-ui.min.js',
+      'bower_components/jquery-ui-slider-pips/dist/jquery-ui-slider-pips.min.js'
+    ],
+    libImages: 'src/lib/images/*.*'
   },
   watch: {
     html: 'src/**/*.html',

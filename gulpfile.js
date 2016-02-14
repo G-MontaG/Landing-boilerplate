@@ -19,7 +19,6 @@ var path = {
     js: 'public/js/',
     css: 'public/css/',
     img: 'public/images/',
-    ui: 'public/css/images/',
     fonts: 'public/fonts/',
     data: 'public/data'
   },
@@ -36,17 +35,12 @@ var path = {
     ],
     libCss: [
       'bower_components/bootstrap/dist/css/bootstrap.min.css',
-      'bower_components/fontawesome/css/font-awesome.min.css',
-      'src/lib/jquery-ui.min.css',
-      'bower_components/jquery-ui-slider-pips/dist/jquery-ui-slider-pips.min.css'
+      'bower_components/fontawesome/css/font-awesome.min.css'
     ],
     libJs: [
       'bower_components/jquery/dist/jquery.min.js',
-      'bower_components/bootstrap/dist/js/bootstrap.min.js',
-      'src/lib/jquery-ui.min.js',
-      'bower_components/jquery-ui-slider-pips/dist/jquery-ui-slider-pips.min.js'
-    ],
-    libImages: 'src/lib/images/*.*'
+      'bower_components/bootstrap/dist/js/bootstrap.min.js'
+    ]
   },
   watch: {
     html: 'src/**/*.html',
